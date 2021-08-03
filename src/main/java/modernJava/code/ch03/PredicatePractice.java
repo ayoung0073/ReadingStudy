@@ -1,4 +1,4 @@
-package ch03;
+package modernJava.code.ch03;
 
 import java.util.ArrayList;
 import java.util.List;

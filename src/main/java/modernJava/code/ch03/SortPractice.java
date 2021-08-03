@@ -1,13 +1,13 @@
-package ch03;
+package modernJava.code.ch03;
 
-import ch02.Apple;
-import static ch02.Color.GREEN;
-import static ch02.Color.RED;
+import modernJava.code.ch02.Apple;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+import static modernJava.code.ch02.Color.GREEN;
+import static modernJava.code.ch02.Color.RED;
 import static java.util.Comparator.comparing;
 
 public class SortPractice {

@@ -1,4 +1,4 @@
-package ch02;
+package modernJava.code.ch02;
 
 // Runnable로 코드 블록 실행하기
 public class RunnablePractice {

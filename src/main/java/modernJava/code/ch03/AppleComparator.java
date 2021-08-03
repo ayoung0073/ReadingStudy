@@ -1,6 +1,6 @@
-package ch03;
+package modernJava.code.ch03;
 
-import ch02.Apple;
+import modernJava.code.ch02.Apple;
 
 import java.util.Comparator;
 

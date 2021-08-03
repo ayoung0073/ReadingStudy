@@ -1,4 +1,4 @@
-package ch02;
+package modernJava.code.ch02;
 
 public class Apple {
     private Integer weight;

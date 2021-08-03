@@ -1,11 +1,11 @@
-package ch02;
+package modernJava.code.ch02;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-import static ch02.Color.GREEN;
-import static ch02.Color.RED;
+import static modernJava.code.ch02.Color.GREEN;
+import static modernJava.code.ch02.Color.RED;
 
 // Comparator 로 정렬하기
 public class ComparatorPractice {

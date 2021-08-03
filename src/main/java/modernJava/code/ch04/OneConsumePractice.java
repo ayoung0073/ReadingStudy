@@ -1,4 +1,4 @@
-package ch04;
+package modernJava.code.ch04;
 
 import java.util.Arrays;
 import java.util.List;
