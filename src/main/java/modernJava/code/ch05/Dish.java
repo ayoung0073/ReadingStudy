@@ -16,7 +16,7 @@ public class Dish {
     private boolean check;
     private int calories;
 
-    static final List<Dish> menu = Arrays.asList(
+    public static final List<Dish> menu = Arrays.asList(
             new Dish("seasonal fruit", true, 120),
             new Dish("prawns", false, 300),
             new Dish("chicken", false, 400),
