@@ -1,10 +1,5 @@
 package modernJava.code.ch05;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.ToString;
-
-import java.util.Arrays;
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
@@ -14,6 +9,13 @@ public class SlicingPractice {
     public static void main(String[] args) {
 
         List<Dish> specialMenu = Dish.menu;
+        /*
+            new Dish("seasonal fruit", true, 120),
+            new Dish("prawns", false, 300),
+            new Dish("chicken", false, 400),
+            new Dish("french fries", false, 530),
+            new Dish("rice", true, 280)
+         */
 
         System.out.println("filter");
         List<Dish> filterMenu
@@ -45,7 +47,6 @@ public class SlicingPractice {
                 .collect(toList());
         slicedMenu2.forEach(System.out::println);
         /*
-
             Dish(name=chicken, check=false, calories=400)
             Dish(name=french fries, check=false, calories=530)
             Dish(name=rice, check=true, calories=280)
