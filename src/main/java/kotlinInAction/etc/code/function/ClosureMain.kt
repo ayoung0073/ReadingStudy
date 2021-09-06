@@ -1,4 +1,4 @@
-package kotlinInAction.etc.code
+package kotlinInAction.etc.code.function
 
 fun main() {
     val calc = Calc()
