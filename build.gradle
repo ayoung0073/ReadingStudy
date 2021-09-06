@@ -7,6 +7,8 @@
 
 plugins {
     id 'java'
+    id "me.champeau.jmh" version "0.6.6"
+    id 'org.jetbrains.kotlin.jvm' version '1.5.30'
 }
 
 sourceCompatibility = '14'
@@ -21,11 +23,26 @@ dependencies {
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.7.2'
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
 
+    // JMH(자바 마이크로벤치마크 하니스): 작은 벤치마크 구현
+    implementation group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.33'                      // 핵심 JMH 구현 포함
+    testImplementation group: 'org.openjdk.jmh', name: 'jmh-generator-annprocess', version: '1.33'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"  // JAR 파일을 만드는 데 도움을 주는 어노테이션 프로세서 포함
+
 }
 
 test {
     useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
+    }
+}
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
     }
 }
