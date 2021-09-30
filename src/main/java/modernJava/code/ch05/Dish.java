@@ -24,4 +24,10 @@ public class Dish {
             new Dish("rice", true, 280)
     );
 
+    public String getCaloricLevel() {
+        if (this.getCalories() <= 400) return "DIET";
+        else if (this.getCalories() <= 700) return "NORMAL";
+        else return "FAT";
+    }
+
 }
